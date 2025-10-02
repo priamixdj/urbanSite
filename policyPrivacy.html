@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- paperella -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban NC</title>
+  <!-- Link al file CSS esterno -->
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/policy.css">
+
+  <!-- Link font e icone -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/image/Logo%20png/3000%20x%203000/2white.png">
+</head>
+
+<body class="policyPrivacy" >
+
+  <!-- <iframe class="menu" src="menu.html" frameborder="0"></iframe> -->
+
+  <section id="menu" class="menu_close"> <!-- components/menu.js --> </section> 
+  
+
+  <!-- <section id="home"> -->
+
+    <!-- tre span per il menu -->
+    <h1 id="menu_text" class="">menu.</h1>
+    <span id="hamburger_menu"></span>
+  </section>
+
+  <header class="section-black" id="prima_section">
+    <img src="assets/image/Logo png/3000 x 3000/2.23white.png" alt="Urban Logo">
+  </header> 
+
+<!-- __________ fine-->
+
+  <section class="center">
+    <section id="policy">
+      <h1>Privacy Policy</h1>
+
+      <p>Ai sensi del Regolamento UE 2016/679 (GDPR), questa pagina descrive le modalità di trattamento dei dati personali degli utenti che visitano il sito <strong>Urban NC</strong>.</p>
+      <br><br>
+      <h2>Titolare del trattamento 🧑‍💼</h2> 
+      <p>
+      Il titolare del trattamento è:<br>
+      <strong>Marco Giacomini</strong><br>
+      Italia<br>
+      Email: <a href="mailto:mail@gmail.com" style="color: black;">mail@gmail.com</a>
+      </p>
+
+      <h2>Tipologia di dati trattati 📄</h2>
+      <p>
+      Il sito non raccoglie automaticamente dati personali identificabili.<br>
+      Tuttavia, attraverso il <strong>form di contatto</strong>, l’utente può fornire volontariamente il proprio indirizzo email e altre informazioni necessarie per ricevere una risposta.
+      </p>
+
+      <h2>Finalità del trattamento 🎯</h2>
+      <p>
+      I dati forniti tramite il form vengono utilizzati esclusivamente per rispondere a richieste dell’utente o per finalità promozionali legate all’etichetta discografica <strong>Urban NC</strong>.
+      </p>
+
+      <h2>Base giuridica ⚖️</h2>
+      <p>
+      Il trattamento si basa sul consenso espresso dall’utente inviando il form di contatto.
+      </p>
+
+      <h2>Modalità del trattamento 💾</h2>
+      <p>
+      I dati vengono inviati tramite il servizio <strong>MailJS</strong> e non sono conservati sul sito o su database terzi persistenti. Nessun dato viene ceduto a terzi.
+      </p>
+
+      <h2>Cookie 🍪</h2>
+      <p>
+      Il sito utilizza esclusivamente <strong>cookie tecnici essenziali</strong> per il corretto funzionamento del sito. Non vengono utilizzati cookie di profilazione o di terze parti per finalità pubblicitarie o statistiche.
+      </p>
+
+      <h2>Diritti degli interessati 📝</h2>
+      <p>
+      Gli utenti possono esercitare i seguenti diritti:
+      <ul>
+          <li>accesso ai dati personali;</li>
+          <li>rettifica o cancellazione degli stessi;</li>
+          <li>limitazione o opposizione al trattamento.</li>
+      </ul> <br>
+      <p>Le richieste possono essere inviate a <a href="mailto:mail@gmail.com">mail@gmail.com</a>.
+      </p>
+
+      <h2>Sicurezza 🔐</h2>
+      <p>
+      Il sito è accessibile tramite protocollo <strong>HTTPS</strong>, che garantisce la cifratura delle comunicazioni.
+      </p>
+
+      <h2>Modifiche alla privacy policy 🔄</h2>
+      <p>
+      Questa informativa può essere soggetta a modifiche. Si consiglia di consultarla periodicamente.
+      </p>
+
+      <p style="margin: 0; margin-top: 3rem; font-size: 0.9em;">Ultimo aggiornamento: 11 agosto 2025</p>
+    </section>
+  </section>
+        
+
+  <!-- ______________ inizio -->
+  
+  <section class="section-white" id="more">
+    <div class="title">
+      <h2>More</h2>
+    </div>
+
+    <div class="footer_menu" id="footer_menu"> <!-- components/menu.js -->  </div>
+    
+    <div id="wave-container" class="fade-in">
+      <!-- div con la classe "bar" da javascript -->
+    </div>
+    
+    <script>
+      function addBars() {
+        const waveContainer = document.getElementById('wave-container');
+        waveContainer.innerHTML = ''; // Rimuoviamo tutti i div esistenti
+    
+        const screenWidth = window.innerWidth;
+        let numberOfBars;
+        
+        // ridimensionamento in base alla larghezza dello schermo
+        numberOfBars = screenWidth/20;
+
+        
+
+        // animazione movimento barre
+        for (let i = 0; i < numberOfBars; i++) {
+          const bar = document.createElement('div');
+          bar.classList.add('bar');
+          const randomDuration = Math.random() * 3 + 2; // Durata casuale tra 2s e 5s
+          bar.style.animationDuration = `${randomDuration}s`;
+          waveContainer.appendChild(bar);
+        }
+      }
+    
+      window.addEventListener('resize', addBars); // Aggiorna le barre al ridimensionamento della finestra
+      window.addEventListener('load', addBars); // Aggiorna le barre al caricamento della pagina
+    </script>
+    
+  </section>
+
+  <footer id="footer"> <!-- components/footer.js --> </footer>
+
+</body>
+
+<script src="assets/js/artits.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/songs.js"></script>
+
+<script src="components/menu.js"></script>
+<script src="components/footer.js"></script>
+
+</html>

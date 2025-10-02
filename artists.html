@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban NC</title>
+  <!-- Link al file CSS esterno -->
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/artists.css">
+
+  <!-- Link font e icone -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/image/Logo%20png/3000%20x%203000/2white.png">
+</head>
+
+<body class="">
+  <section id="menu" class="menu_close"> <!-- components/menu.js--> </section>
+
+  <section id="artists">
+    <!-- <img src="assets/image/logoWhite.svg" alt="Logo UrbanSite" class="logo"> -->
+
+    <!-- tre span per il menu -->
+    <h1 id="menu_text" class="">menu.</h1>
+    <span id="hamburger_menu"></span>
+  </section>
+
+  <header class="section-black" id="prima_section">
+    <img src="assets/image/Logo png/3000 x 3000/2.23white.png" alt="Urban Logo">
+  </header>
+
+  <!-- __________ fine-->
+
+
+
+  <section class="section-black" id="more_playlist">
+    <div class="title">
+      <h2>Urban Artists</h2>
+    </div>
+
+    <div class="demo_songs center" id="Array_artists">
+      <!-- Codice da script songs.js -->
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ________ inizio -->
+  <section class="section-white" id="more">
+    <div class="title">
+      <h2>More </h2>
+    </div>
+
+    <div class="footer_menu" id="footer_menu"> <!-- components.js --> </div>
+    
+    <div id="wave-container">
+      <!-- div con la classe "bar" da javascript -->
+    </div>
+    
+    <script>
+      function addBars() {
+          const waveContainer = document.getElementById('wave-container');
+          waveContainer.innerHTML = ''; // Rimuoviamo tutti i div esistenti
+      
+          const screenWidth = window.innerWidth;
+          let numberOfBars;
+          
+          // ridimensionamento in base alla larghezza dello schermo
+          numberOfBars = screenWidth/20;
+
+          
+
+          // animazione movimento barre
+          for (let i = 0; i < numberOfBars; i++) {
+          const bar = document.createElement('div');
+          bar.classList.add('bar');
+          const randomDuration = Math.random() * 3 + 2; // Durata casuale tra 2s e 5s
+          bar.style.animationDuration = `${randomDuration}s`;
+          waveContainer.appendChild(bar);
+          }
+      }
+      
+      window.addEventListener('resize', addBars); // Aggiorna le barre al ridimensionamento della finestra
+      window.addEventListener('load', addBars); // Aggiorna le barre al caricamento della pagina
+    </script>
+
+  </section>
+
+  <footer id="footer"> <script src="components/footer.js"></script> </footer>
+</body>
+
+<script src="assets/js/artits.js"></script>
+<script src="assets/js/index.js"></script>
+
+<script src="components/menu.js"></script>
+<script src="components/footer.js"></script>
+</html>

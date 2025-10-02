@@ -1,0 +1,73 @@
+/* Sound ----------*/
+#playlist {
+    height: auto;
+}
+#playlist .demo_songs { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80%;
+    /* border: solid red 2px; */
+
+    position: relative;
+    margin-top: 100px;
+}
+
+#playlist .demo_songs iframe {
+    width: 20%;
+    min-width: 300px;
+    margin: 10px;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+/* #playlist .demo_songs iframe:hover {
+    scale: 1.1;
+    width: 35%;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+} */
+
+.more_cont {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+
+    /* border: solid red 2px; */
+}
+
+
+#more_playlist {
+    height: auto;
+    padding-bottom: 100px;
+}
+#more_playlist .demo_songs { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80%;
+    /* border: solid red 2px; */
+
+    position: relative;
+    margin-top: 100px;
+}
+
+#more_playlist .demo_songs iframe {
+    width: 20%;
+    min-width: 300px;
+    margin: 10px;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+#more_playlist .demo_songs iframe:hover {
+    scale: 1.1;
+    width: 25%;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+
+@media (max-width: 1000px) {
+    #prima_section img {
+        width: 40%;
+    }
+}

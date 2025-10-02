@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+    border: solid red 2px;
+}
+
+.center{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#index #prima_section {
+    height: 100vh;
+
+}
+#index #prima_section img {
+    width: 50%;
+}
+
+#prima_section {
+    height: 10vh;
+}
+#prima_section img {
+    width: 15%;
+    position: fixed;
+    /* border: solid red 2px; */
+}
+
+
+#top_artists {
+    /* border: solid red 2px; */
+    padding: 0px 50px;
+}
+#top_artists img {
+    width: 35%;
+    height: 35%;
+    min-width: 200px;
+    object-fit: cover;
+    /* border: solid red 2px; */
+}
+
+.background_trasparent60 {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.637); */
+    background-color: none;
+        left: 0;
+    width: 100%;
+    height: fit-content;
+    /* border: solid red 2px; */
+}
+@media (max-width: 502px) {
+    #top_artists img {
+        width: 100px;
+        height: 100px ;
+
+        min-width: fit-content;
+        object-fit: cover;
+    }
+}
+
+/* safari */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+
+    /* Fix height: fit-content su Safari che non lo supporta sempre bene */
+    .background_trasparent60 {
+        height: auto;
+    }
+
+    /* Fix min-width: fit-content che non è sempre affidabile su Safari */
+    @media (max-width: 502px) {
+        #top_artists img {
+            min-width: unset;
+            /*  */
+        }
+    }
+  }
+}
+
+

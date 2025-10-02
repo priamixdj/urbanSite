@@ -1,0 +1,9 @@
+:root {
+    --white: #ffffff;
+    --black: #000;
+    --padding: 20px;
+    --menu-bg-color: #d3d3d31e; /* colore di sfondo semi-trasparente */
+
+    --width_menu_hamburger: 40px; /* larghezza del menu hamburger */
+    --right_menu_hamburger: 15px; /* distanza dal bordo destro */
+}
