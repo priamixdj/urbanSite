@@ -58,28 +58,11 @@
         width: 100px;
         height: 100px ;
 
-        min-width: fit-content;
+        min-width: unset;
         object-fit: cover;
     }
 }
 
-/* safari */
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
 
-    /* Fix height: fit-content su Safari che non lo supporta sempre bene */
-    .background_trasparent60 {
-        height: auto;
-    }
-
-    /* Fix min-width: fit-content che non è sempre affidabile su Safari */
-    @media (max-width: 502px) {
-        #top_artists img {
-            min-width: unset;
-            /*  */
-        }
-    }
-  }
-}
 
 
