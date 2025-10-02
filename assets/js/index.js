@@ -11,4 +11,9 @@ const circle = document.createElement('div');
 //     circle.style.top = `${event.pageY - 10}px`;
 // })
 
+// refresh della cache
+if (!window.location.search.includes('cache=')) {
+  const url = window.location.pathname + '?cache=' + Date.now();
+  window.location.replace(url); // meglio di location.href per evitare doppio "indietro"
+}
 
